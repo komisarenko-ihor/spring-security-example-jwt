@@ -1,0 +1,19 @@
+spring:
+  security:
+    user:
+      name: Admin1
+      password: password1
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:bootapp;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+
+logging:
+  level:
+    org.springframework.security: error
+    com.example.com.example.springsecurityexamplejwt: debug
+#    org.hibernate.type.descriptor.sql: trace
